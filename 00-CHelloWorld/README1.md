@@ -1,0 +1,1 @@
+Dentro de esta carpeta podemos observar dos archivos, el primero es del Hello.cpp que es el programa en el cual generamos la salida por pantalla  y en el archivo output.txt tenemos guardada la salida del programa hello.cpp
