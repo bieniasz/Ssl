@@ -56,6 +56,7 @@ Objetivo:Identificar las fases de traducción y errores
 -Aparece un warning por no haber declarado la función printf, ademas podemos apreciar una nota en la que se incluye "<stdio.h>
 
 >gcc -c hello7.s
+
 >gcc -o hello7 hello7.o
 
 -Al ejecutarlo aparece la nota "La respuesta es 42",sin ningun tipo de problemas.
