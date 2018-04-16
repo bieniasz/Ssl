@@ -5,41 +5,41 @@ Titulo:Trabajo numero 1 - Fases de traducción y Errores.
 Objetivo:Identificar las fases de traducción y errores
 1.  hello2.c
 >gcc -E -o hello2.i hello2.c
-Aparecen todas las declaraciones que son propias del #include <studio.h> y desaparecen los comentarios, los cuales son remplazados por espacios
+-Aparecen todas las declaraciones que son propias del #include <studio.h> y desaparecen los comentarios, los cuales son remplazados por espacios
 
 2.hello3.c
 >gcc -E -o hello3.i hello3.c
-Podemos observar que aparecen seis lineas arriba de la declaración del printf.
+-Podemos observar que aparecen seis lineas arriba de la declaración del printf.
 
 3. >gcc -S hello3.i
-Al compilar aparece una señal de advertencia o tambien denominada warning que hace referencia a la función prontf y un error de declaracion o declaracipon esperada al final, haciendo referencia a que falta poner la llave de cierre.
+-Al compilar aparece una señal de advertencia o tambien denominada warning que hace referencia a la función prontf y un error de declaracion o declaracipon esperada al final, haciendo referencia a que falta poner la llave de cierre.
 
 4. Hello4.c 
-gcc -E -o hello4.i hello4.c
-gcc -S hello4.i
+>gcc -E -o hello4.i hello4.c
+>gcc -S hello4.i
 
-Aparece un warning haciendo referencia a la función prontf
-gcc -E -o hello5.i hello5.c
-gcc -S hello5.i
-Aparece un warning haciendo referencia al formato de "%d", informando que espera un argumento del tipo int
+-Aparece un warning haciendo referencia a la función prontf
+>gcc -E -o hello5.i hello5.c
+>gcc -S hello5.i
+-Aparece un warning haciendo referencia al formato de "%d", informando que espera un argumento del tipo int
 
-5-.gcc -c hello5.s
-gcc -o hello5 hello5.o
-Al ejecutarlo aparece un número el cual puede variar, la salida que podemos ver es "basura" que estaba posicionada en esa posición de memoria.
+5-.>gcc -c hello5.s
+>gcc -o hello5 hello5.o
+-Al ejecutarlo aparece un número el cual puede variar, la salida que podemos ver es "basura" que estaba posicionada en esa posición de memoria.
 
 6. hello6.c
-gcc -E -o hello6.i hello6.c
-gcc -S hello6.i
-gcc -c hello6.s
-gcc -o hello6 hello6.o
-No presenta errores, al ejecutar aparece el mensaje "La respuesta es 42"
+>gcc -E -o hello6.i hello6.c
+>gcc -S hello6.i
+>gcc -c hello6.s
+>gcc -o hello6 hello6.o
+-No presenta errores, al ejecutar aparece el mensaje "La respuesta es 42"
 
 7. hello7.c
-gcc -E -o hello7.i hello7.c
-gcc -S hello7.i
-Aparece un warning por no haber declarado la función printf, ademas podemos apreciar una nota en la que se incluye "<stdio.h>
-gcc -c hello7.s
-gcc -o hello7 hello7.o
+>gcc -E -o hello7.i hello7.c
+>gcc -S hello7.i
+-Aparece un warning por no haber declarado la función printf, ademas podemos apreciar una nota en la que se incluye "<stdio.h>
+>gcc -c hello7.s
+>gcc -o hello7 hello7.o
 
-Al ejecutarlo aparece la nota "La respuesta es 42",sin ningun tipo de problemas.
+-Al ejecutarlo aparece la nota "La respuesta es 42",sin ningun tipo de problemas.
 Y por ultimo funciona sin haberla declarado por que el gcc compiler incluye por defecto la <stdio.h>
