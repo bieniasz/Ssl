@@ -3,5 +3,5 @@
  -Curso: k2051
  -Año: 2018
  -Legajo: 1637782
- -Apelliddo: Bieniasz
+ -Apellido: Bieniasz
  -Nombre: Ezequiel
