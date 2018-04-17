@@ -25,15 +25,25 @@ Hello4.c
 
 -Aparece un warning haciendo referencia a la función prontf
 
+-Al abrir hello4.s aparece el codigo assembler
+
+ >gcc -c hello4.s
+
+ >gcc -o hello4 hello4.o
+
+-Al generar ejecutable no esta definida prontf, error ld returned 1 exit status
+
+Hello5.c
+
 >gcc -E -o hello5.i hello5.c
 
 >gcc -S hello5.i
 
 -Aparece un warning haciendo referencia al formato de "%d", informando que espera un argumento del tipo int
 
->gcc -c hello5.s
+>gcc -c hello4.s
 
->gcc -o hello5 hello5.o
+>gcc -o hello4 hello4.o
 
 -Al ejecutarlo aparece un número el cual puede variar, la salida que podemos ver es "basura" que estaba posicionada en esa posición de memoria.
 
