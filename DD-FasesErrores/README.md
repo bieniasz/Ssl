@@ -15,7 +15,7 @@ hello3.c
 
 >gcc -S hello3.i
 
--Al compilar aparece una señal de advertencia o tambien denominada warning que hace referencia a la función prontf y un error de declaracion o declaracipon esperada al final, haciendo referencia a que falta poner la llave de cierre.
+-Al compilar aparece una señal de advertencia o tambien denominada warning que hace referencia a la función prontf y un error de declaracion o declaración esperada al final, haciendo referencia a que falta poner la llave de cierre.
 
 Hello4.c 
 
@@ -24,8 +24,7 @@ Hello4.c
 >gcc -S hello4.i
 
 -Aparece un warning haciendo referencia a la función prontf
-
--Al abrir hello4.s aparece el codigo assembler
+- Al investigar el código assambler podemos observar movimientos del contenido de un registro a otro, movimiento dentro de una pila con el base pointer y el stack pointer, y ademas la llamada a la función prontf. Vemos un código el cual es de baja abtracción en comparación con c , pero que igualmente un operador podría realizar el mismo programa ya sea en un lenguaje o en otro, aunque la tarea en assambler sería mucho mas engorrosa. 
 
  >gcc -c hello4.s
 
