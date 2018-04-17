@@ -7,7 +7,7 @@ hello2.c
 >gcc -E -o hello2.i hello2.c
 
 -Aparecen todas las declaraciones que son propias del #include <studio.h> y desaparecen los comentarios, los cuales son reemplazados por espacios
-
+-Es la declaracion de una funcion que retorna un entero y espera por argumento por lo menos una constante del tipo char puntero.
 hello3.c
 >gcc -E -o hello3.i hello3.c
 
